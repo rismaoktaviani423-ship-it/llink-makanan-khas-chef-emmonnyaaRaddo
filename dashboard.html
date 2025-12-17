@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kreasi Indomie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dash-bg">
+  <nav>
+    <span id="welcome"></span>
+    <button onclick="logout()">Logout</button>
+  </nav>
+
+  <main class="container">
+    <h2>Tambah Kreasi Indomie</h2>
+
+    <input type="text" id="judul" placeholder="Nama Kreasi Indomie">
+
+    <textarea id="bahan" placeholder="Bahan-bahan (pisahkan dengan koma)"></textarea>
+
+    <textarea id="proses" placeholder="Proses pembuatan langkah demi langkah"></textarea>
+
+    <input type="file" id="foto" accept="image/*">
+
+    <button onclick="simpanKreasi()">Simpan Kreasi</button>
+
+    <h3>Galeri Kreasi</h3>
+    <div id="galeri" class="galeri"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
